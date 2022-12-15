@@ -54,7 +54,9 @@ export const App = () => {
         incompleteTodos={incompleteTodos}
         onClickComplete={onClickComplete}
         onCLickDelete={onCLickDelete}
-      />
+      >
+        未完了のTODO（children）
+      </IncompleteArea>
       <CompleteArea completeTodos={completeTodos} onClickBack={onClickBack} />
     </>
   );

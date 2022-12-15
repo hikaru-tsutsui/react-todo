@@ -1,10 +1,10 @@
 import React from "react";
 
 export const IncompleteArea = (props) => {
-  const { incompleteTodos, onClickComplete, onCLickDelete } = props;
+  const { incompleteTodos, onClickComplete, onCLickDelete, children } = props;
   return (
     <div className="incomplete-area">
-      <p className="title">未完了のTODO</p>
+      <p className="title">{children}</p>
       <ul>
         {incompleteTodos.map((todo, index) => {
           return (
